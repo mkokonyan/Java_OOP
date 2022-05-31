@@ -68,7 +68,7 @@ public class Main {
                         Team teamToShowStats = Team.getTeamFromString(teams, teamName);
 
 
-                        System.out.printf("%s - %.0f%n", teamToShowStats.getName(), teamToShowStats.getRating());
+                        System.out.printf("%s - %d%n", teamToShowStats.getName(), Math.round(teamToShowStats.getRating()));
 
                     } catch (IllegalArgumentException e) {
                         System.out.println(e.getMessage());
